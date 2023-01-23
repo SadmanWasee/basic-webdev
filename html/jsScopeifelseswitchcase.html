@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditionals</title>
+</head>
+<body>
+    <!-- div>ul>li{Item-$}*n This is how we created the following structure-->
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = "This is a string ";
+        var string1 = "This is a string 2"; //Though other programming language does not allow to redeclare the same variable. In java script var allows us to do that. Because var scope is global unless you decalre it in a function. 
+        //so there is another way to declare variable using - let as it's scope is within a block of code. 
+
+        //var --> Always Golbal variable 
+        //let --> Can be local variable
+
+
+        console.log(string1);
+        let a = "u";//This is global a. 
+        //let a = "Y"; Does not allow us to redeclare the value as both have the same scope. 
+
+        {
+            let a = "u6"; // We can declare a again as we have declared it in this block. Here it is a local variable.
+            console.log(a); 
+        }
+        console.log(a);
+
+        const cst = "This can not be changed";
+         //cst ="I will try to change this";
+
+         console.log(cst); 
+
+         //Use const when you feel that you may accidentally change the value. 
+
+        let age = 34;
+        //let age = 5;
+        if(age>18){
+            console.log("You can drink water");
+        }
+        else if(age==2){
+            console.log("Age is 2")
+        }
+        else if(age==5){
+            console.log("Age is 5")
+        }
+        else{
+            console.log("You can drink Cold Drink");
+        }
+
+
+        const cups = 41; 
+        switch (cups) {
+            case 4:
+                console.log("The value of cups is 4")
+                break;
+
+            case 41:
+                console.log("The value of cups is 41")
+                break;
+
+            case 42:
+                console.log("Th e value of cups is 42")
+                break;
+
+            case 43:
+                console.log("The value of cups is 43")
+                break;
+        
+            default:
+                console.log("The value of cups is none of 4, 41, 42, 43")
+                break;
+            }
+
+
+
+    </script>
+</body>
+</html>

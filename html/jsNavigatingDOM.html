@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>More About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <script>
+        let main = document.getElementById('main');
+        console.log(main);
+        let nav = document.getElementById('nav');
+        console.log(nav);
+        //nav.innerHTML in console to see the inner html of nav
+        // change the inner HTML nav.innerHTML = "<li>Dynamic element</li>"
+
+        let container = document.getElementsByClassName('container');
+        console.log(container);
+
+        //let sel = document.querySelector('.container');//gettting html block using CSS class selector 
+        //let sel = document.querySelector('#nav'); //getting html block using CSS id selector
+        let sel = document.querySelectorAll('#nav>li'); //getting all html block with similar id 
+
+        console.log("Selector returns", sel);
+
+        //sel[0].innerHTML = "Inserted 2" (Edits the first element of sel)
+    </script>
+</body>
+</html>
