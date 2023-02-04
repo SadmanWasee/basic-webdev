@@ -47,16 +47,16 @@ let computerscore =0;
         if(rock==1)
         {
             playerscore+=1;
-            document.getElementById("text").innerHTML = "Player "+playerscore+" : "+computerscore+" computer";
+            document.getElementById("text").innerHTML = "Player "+playerscore+" : "+computerscore+" Computer";
         }
         else if(rock==-1)
         {
             computerscore+=1;
-            document.getElementById("text").innerHTML = "Player "+playerscore+" : "+computerscore+" computer";
+            document.getElementById("text").innerHTML = "Player "+playerscore+" : "+computerscore+" Computer";
         }
         else
         {
-            document.getElementById("text").innerHTML = "Player "+playerscore+" : "+computerscore+" computer";
+            document.getElementById("text").innerHTML = "Player "+playerscore+" : "+computerscore+" Computer";
         }
 
     })
@@ -65,16 +65,16 @@ let computerscore =0;
         if(paper==1)
         {
             playerscore+=1;
-            document.getElementById("text").innerHTML = "Player "+playerscore+" : "+computerscore+" computer";
+            document.getElementById("text").innerHTML = "Player "+playerscore+" : "+computerscore+" Computer";
         }
         else if(paper==-1)
         {
             computerscore+=1;
-            document.getElementById("text").innerHTML = "Player "+playerscore+" : "+computerscore+" computer";
+            document.getElementById("text").innerHTML = "Player "+playerscore+" : "+computerscore+" Computer";
         }
         else
         {
-            document.getElementById("text").innerHTML = "Player "+playerscore+" : "+computerscore+" computer";
+            document.getElementById("text").innerHTML = "Player "+playerscore+" : "+computerscore+" Computer";
         }
 
 
@@ -83,16 +83,16 @@ let computerscore =0;
         if(scissor==1)
         {
             playerscore+=1;
-            document.getElementById("text").innerHTML = "Player "+playerscore+" : "+computerscore+" computer";
+            document.getElementById("text").innerHTML = "Player "+playerscore+" : "+computerscore+" Computer";
         }
         else if(scissor==-1)
         {
             computerscore+=1;
-            document.getElementById("text").innerHTML = "Player "+playerscore+" : "+computerscore+" computer";
+            document.getElementById("text").innerHTML = "Player "+playerscore+" : "+computerscore+" Computer";
         }
         else
         {
-            document.getElementById("text").innerHTML = "Player "+playerscore+" : "+computerscore+" computer";
+            document.getElementById("text").innerHTML = "Player "+playerscore+" : "+computerscore+" Computer";
         }
 
     });

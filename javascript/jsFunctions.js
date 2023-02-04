@@ -19,3 +19,9 @@ function sum(a,b,c)
 
 let n = sum(1,1,1);
 console.log("The sum of 1+1+1 is" + n);
+
+//Immediately invokable fuction IIFE
+
+(function displayMessage(message){
+    console.log(message);
+})('The display message function is invoked');
