@@ -50,4 +50,7 @@ let myDiv = document.getElementById('div2');
 myDiv.appendChild(heading3);
 
 
-//
+//Removing an html element 
+
+let tobeRemoved = document.getElementsByTagName("h2")[0];
+myDiv.removeChild(tobeRemoved);
