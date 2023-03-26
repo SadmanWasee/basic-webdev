@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <style>
+    /* Add your CSS styles here */
+    .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-segment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.sidebar-segment.active:hover {
+  background-color: #555;
+}
+
+.sidebar-segment:hover {
+  background-color: #555;
+}
+
+.sidebar-segment i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.sidebar-segment a {
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.sidebar-segment.active a {
+  color: #fff;
+}
+
+.sidebar-segment:hover a {
+  color: #fff;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 100px; /* adjust as needed */
+  width: calc(100% - 100px); /* adjust as needed */
+}
+
+.card {
+  width: 250px;
+  height: 150px;
+  margin-right: 20px;
+  background-color: #eee;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card:hover {
+  background-color: #ccc;
+}
+
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="sidebar-segment active">
+      <i class="material-icons">account_circle</i>
+      <a href="#">Account</a>
+    </div>
+    <div class="sidebar-segment">
+      <i class="material-icons">dashboard</i>
+      <a href="#">Dashboard</a>
+    </div>
+    <div class="sidebar-segment">
+      <i class="material-icons">book</i>
+      <a href="#">Courses</a>
+    </div>
+    <div class="sidebar-segment">
+      <i class="material-icons">calendar_today</i>
+      <a href="#">Calendar</a>
+    </div>
+    <div class="sidebar-segment">
+      <i class="material-icons">inbox</i>
+      <a href="#">Inbox</a>
+    </div>
+    <div class="sidebar-segment">
+      <i class="material-icons">history</i>
+      <a href="#">History</a>
+    </div>
+    <div class="sidebar-segment">
+      <i class="material-icons">help</i>
+      <a href="#">Help</a>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+  </div>
+</body>
+</html>

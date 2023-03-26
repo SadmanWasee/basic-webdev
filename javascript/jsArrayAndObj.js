@@ -27,6 +27,12 @@ console.log(names.pop());
 console.log(concatname);
 //console.log(names[1]);
 
+
+
+
+
+
+
 //creating an array with new keyword 
 
 // let names = new Array(23);
