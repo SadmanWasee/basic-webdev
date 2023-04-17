@@ -14,7 +14,7 @@ const services = fs.readFileSync('services.html');
 
 
 //Using the create server method to create a server
-//The create server method has an argument which is a call back function that takes to arguments request and result.
+//The create server method has an argument which is a call back function that takes two arguments request and result.
 //req represents the request made by the client and res represents the response of the server
 const server = http.createServer((req,res)=>{
 
@@ -55,7 +55,7 @@ const server = http.createServer((req,res)=>{
 
 });
 
-//Server is set to listen to the defined hostname and port for incoming actions and messege is logged to the conole indicating that the server is running 
+//Server is set to listen to the defined hostname and port for incoming actions and messege is logged to the conole indicating that the server is running
 server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
 });
