@@ -1,0 +1,9 @@
+//npm helps us to manage the package
+//cd to a folder and type npm init commmand to turn the folder into a npm package
+//npm install pacakge name --save-dev : this command will save it as a dev dependency : because I dob't want nodemon after deployment 
+//npm install package name --global: so we can use it any project 
+//nodemon is a package used for deploying live server it insantly updates our projects 
+//npm i package name : we don't need to write install as i represents install
+//^: this symbol means it will install exactly that version 
+//~: sign represents that the latest patches will also be installed 
+//>: is used to install latest version 
