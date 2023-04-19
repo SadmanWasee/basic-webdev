@@ -1,0 +1,10 @@
+Express is a web application framework for nodejs. 
+It will do the URL parsing on its own. 
+It will give us functions to handle get post and routing. 
+It will simpilfy our web development. 
+
+In order to create an environment for express app we have to > create a folder > cd to that folder > run npm init in the terminal > run npm install express
+
+We can use nodemon to run express app this will restart our express app everytime we make changes to our app
+
+simply type in the terminal nodemon app.js to run the app using nodemon

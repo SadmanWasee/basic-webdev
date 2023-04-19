@@ -1,0 +1,2 @@
+what is postman ? 
+It is an app that helps us to process all the post requests and get requests through a custom url or header 
