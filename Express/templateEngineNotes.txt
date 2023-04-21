@@ -1,0 +1,5 @@
+Processes template. 
+You feed it information and it produces a template. 
+For example :- you give user name as input which page to show to the user and the template engine produces an appropriate template to server the user. 
+
+Example of template engine is pug which is good for beginner.

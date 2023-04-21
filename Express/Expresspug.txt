@@ -1,0 +1,23 @@
+app.get("/demo",(req,response)=>{
+    response.status(200).render('demo', { title: 'Hey', message: 'Hello there!' })
+});
+
+//Handle the get request at "/" end point and implement the call back function
+app.get("/",(req,response)=>{
+    response.send("This is my home page of my first app");
+});
+
+//Handle the get request at "/about" end point and implement the call back function
+app.get("/about",(req,response)=>{
+    response.send("This is my about page of my first app");
+});
+
+//Handle post request
+app.post("/about",(req,response)=>{
+    response.send("This is my about page of my first app");
+});
+
+//sending the status code
+app.get("/this",(req,response)=>{
+    response.status(404).send("This is page is not found");
+});
