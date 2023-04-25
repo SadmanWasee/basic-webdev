@@ -1,1 +1,1 @@
-# Javascript-tutorial
+# basic-webdev
