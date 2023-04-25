@@ -12,16 +12,24 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact</a></li>
         </ul>
     </nav>
     <div class="container">
-        <h1>This is heading</h1>
+        <h2>Fill up the form to become a member of this website !</h2>
 
         <p>
-        | #{content}
+        <!-- | #{content}
+        | <p>This is how we add lines in pug</p> -->
+        <form action = "/" method="post" id="contact">
+            <input type="text" name = "name" id="name" placeholder="Enter your name">
+            <input type="number" name="age" id="age" placeholder="Enter your age">
+            <input type="text" name="gender" id="gender" placeholder="Enter your gender">
+            <textarea name="address" id="address" cols="30" rows="10" placeholder="type your address"></textarea>
+            <button class="btn">Submit</button>
+        </form>
     </div>
     
 </body>
